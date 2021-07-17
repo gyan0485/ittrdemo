@@ -1,0 +1,331 @@
+/* Small devices (portrait phones, 576px and up) */
+@media (min-width: 320px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+ .for-mobile {
+        display: none;
+    }
+     .header-top-links li:not(:first-child) {
+        padding-left: 15px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+}
+
+@media (min-width: 1024px) {
+    /* === CSS for Common Text === */
+    .heading.md > h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .heading.md > h3 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .font-16 {
+        font-size: 16px;
+    }
+    .font-18,
+    .static-content-section p {
+        font-size: 28px;
+       
+    }
+    .font-24 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    /* === End CSS for Common Text === */
+
+    /* === CSS for Header section === */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+    /* === End CSS for Header section === */
+
+    /* #banner-section {
+        background-attachment: fixed;
+    } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+}
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1350px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 1100px) {
+    /* === CSS for Header section === */
+    .navbar-brand {
+        max-width: 210px;
+    }
+    .navbar-brand img {
+        width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    /* === End CSS for Header section === */
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 1201px) {
+    .header-top-links li:not(:first-child) {
+        padding-left: 30px;
+    }
+
+}
+@media (max-width: 1200px) { 
+    .logo {
+        max-width: 295px;
+    }
+    .header-section .navbar {
+        background-color: #fff;
+    }
+    .header-top-links {
+        padding-right: 50px;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    /* === CSS for Header section === */
+    .js-mega-menu {
+        position: absolute;
+        right: 15px;
+        left: auto;
+        top: 28px;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar-collapse {
+        height: auto !important;
+        overflow-y: auto;
+        max-height: none;
+        background-color: rgba(24, 48, 89,97);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 100%;
+        border: 0;
+        padding: 0 40px 0 80px;
+        z-index: 9;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -moz-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -ms-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -webkit-transition-delay: .2s;
+        -moz-transition-delay: .2s;
+        -ms-transition-delay: .2s;
+        transition-delay: .2s;
+    }
+    .navbar-toggler, 
+    .navbar-collapse, 
+    .navbar-collapse.collapse, 
+    .navbar-collapse.collapsing, 
+    .navbar-collapse.collapse.show {
+        display: block!important;
+    }
+    .navbar-collapse.show {
+        opacity: 1;
+        pointer-events: all;
+        bottom: 0;
+        padding: 100px 40px;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -ms-transition-delay: 0;
+        transition-delay: 0;
+    }
+    .navbar-toggler[aria-expanded="true"] {
+        /*position: fixed;*/
+        right: 15px;
+        margin: 0;
+        z-index: 999;
+    }
+    .navbar-show {
+        height: 100%;
+        overflow: hidden;
+    }
+    .navbar-toggler .toggle-icon {
+        display: block;
+        height: 2px;
+        width: 28px;
+        background-color: #bd3d20;
+        -webkit-transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -moz-transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -ms-transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        transition: all 0.4s 0s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+    }
+    .navbar-toggler .toggle-icon + .toggle-icon {
+        margin-top: 6px;
+    }
+    .navbar-toggler[aria-expanded="true"] .toggle-icon:first-child {
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+    .navbar-toggler[aria-expanded="true"] .toggle-icon:last-child {
+        transform: rotate(-45deg);
+        opacity: 1;
+        margin-top: -10px;
+    }
+    .navbar-toggler[aria-expanded="true"] .toggle-icon {
+        background-color: #fff;
+        opacity: 0;
+        -webkit-transition-delay: 0.8s;
+        -moz-transition-delay: 0.8s;
+        -ms-transition-delay: 0.8s;
+        transition-delay: 0.8s;
+    }
+    .navbar-toggler:focus, .navbar-toggler:hover {
+        outline: 0;
+    }
+    .nav-item > .nav-link {
+        color: #fff;
+        min-height: 42px;
+        max-height: 42px;
+    }
+    .navbar-nav .nav-item + .nav-item {
+        margin-top: 10px;
+    }
+   /* .navbar-nav li a {
+        transform: translateY(10px);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -moz-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -ms-transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        transition: all 0.6s cubic-bezier(0.26, 0.55, 0.49, 0.96);
+        -webkit-transition-delay: 0.6s;
+        -moz-transition-delay: 0.6s;
+        -ms-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+    }
+    .navbar-collapse.show .navbar-nav li a {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transition-delay: 0.6s;
+        -moz-transition-delay: 0.6s;
+        -ms-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+    }
+    .navbar-collapse.show .navbar-nav li + li a {
+        -webkit-transition-delay: 0.7s;
+        -moz-transition-delay: 0.7s;
+        -ms-transition-delay: 0.7s;
+        transition-delay: 0.7s;
+    }
+    .navbar-collapse.show .navbar-nav li + li + li a {
+        -webkit-transition-delay: 0.8s;
+        -moz-transition-delay: 0.8s;
+        -ms-transition-delay: 0.8s;
+        transition-delay: 0.8s;
+    }
+    .navbar-collapse.show .navbar-nav li + li + li + li a {
+        -webkit-transition-delay: 0.9s;
+        -moz-transition-delay: 0.9s;
+        -ms-transition-delay: 0.9s;
+        transition-delay: 0.9s;
+    }
+    .navbar-collapse.show .navbar-nav li + li + li + li + li a {
+        -webkit-transition-delay: 1s;
+        -moz-transition-delay: 1s;
+        -ms-transition-delay: 1s;
+        transition-delay: 1s;
+    }*/
+    .hs-has-sub-menu > .nav-link:before {
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    .hs-sub-menu {
+        background: #fff;
+        padding: 10px 20px 0;
+        border-radius: 0;
+    }
+    .hs-sub-menu, .hs-mega-menu {
+        position: static;
+    }
+    /* === End CSS for Header section === */
+
+    
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    .navbar-collapse.show {
+        padding: 80px 0px;
+    }
+}
+@media (max-width: 575.8px) and (orientation: landscape) {
+    .navbar-collapse.show {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 991px){
+    .seven h1 {
+        font-size: 24px!important;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 14px;
+    }
+    .btn {
+        padding: .375rem 1.2rem;
+        font-size: 12px;
+    }
+    .for-web {
+        display: none!important;
+    }
+    .for-mobile {
+        display: block;
+    }
+    .header-top-links li{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .header-top-links {
+        padding-right: 0;
+    }
+    .seven h1 {
+        display: block!important;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .logo {
+        max-width: 245px;
+    }
+}
