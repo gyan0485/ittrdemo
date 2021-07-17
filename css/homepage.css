@@ -573,12 +573,7 @@ border-bottom: 1px solid transparent;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
-/*.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;*/
-  
-}
+
 a.card1:hover, .card1:hover {
     box-shadow: 3px 4px 8px 0px rgba(46,61,73,0.2);
 }
@@ -713,10 +708,7 @@ a {
   margin: 0px;
   border-bottom: 1px dotted #555;
 }
-td {
-    /*padding: 8px;
-    font-size: 19px;*/
-}
+
 .radius-0  {
   border-radius: 0!important;
 }
@@ -797,7 +789,7 @@ header * {
     -ms-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.5);
+    background: #fff;
 }
 .nav-item.active > .nav-link {
     font-weight: 600;
@@ -980,11 +972,6 @@ header * {
     float: right;
 }
 
-/*.btn{
-  display: none;
-  margin-top:60px;*/
-
-}
 .cardcontainer:hover .btn{
   display: inline-block;
 }
@@ -1039,7 +1026,7 @@ header * {
 }
 
 /* Slider */
-.slider-section .carousel-item {
+.slider-section .banner-scaled-bg {
   height: 80vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1069,15 +1056,25 @@ header * {
   }
 }
 
-.slider-section .carousel-inner .carousel-item {
+.slider-section .carousel-inner .banner-scaled-bg {
   -webkit-animation: zoom 10s;
   animation: zoom 10s;
 }
 
 .carousel-caption{
       font-family: Arial;
-      background-color: #282828;
-      opacity: 0.75;
+      background-color: rgba(0, 0, 0, 0.75);
+      left: 0;
+      right: 0;
+      /* opacity: 0.75; */
+}
+.news-thumbnail {
+  height: 180px;
+}
+
+.news-thumbnail img {
+  height: 100%;
+  width: 100%;
 }
 @media(max-width: 768px){
   h1{
@@ -1132,9 +1129,10 @@ width: 100%;
 	background-color: black;
 	padding: 0;
 	overflow: hidden;
-	max-width: 700px;
+	/* max-width: 700px; */
   max-height: 300px;
-	margin: 5px;
+	/* margin: 5px; */
+  position: relative;
 
 }
 
@@ -1153,7 +1151,7 @@ width: 100%;
 .container_foto h2 {
 	color: #fff;
   font-family: Arial;
-	font-weight: 1000;	
+	font-weight: 700;	
 	border-bottom: #fff solid 1px;
 }
 
@@ -1235,10 +1233,6 @@ width: 100%;
 	opacity: 1;
 }
 
-.messagedora{
-    margin-right: -140px;
-    
-}
 
 /* Using cards to display blog date */
 .card.date {
@@ -1358,4 +1352,111 @@ width: 100%;
     margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
+}
+.add-after-plus:after {
+  content: '+';
+}
+.info-section .card-title {
+  margin-bottom: 0;
+}
+.banner-caption h3 {
+  font-size:40px; 
+  font-family: Arial; 
+  color: #10386B; 
+  font-weight: bold;
+}
+.highlighted-banner-caption {
+  color: #fff;
+  padding: 0 8px;
+  background: #0f386b;
+}
+/* Homepage Responsive CSS */
+@media (max-width: 1366px) {  
+  .nav-item > .nav-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {  
+  .homepage-wrapper .js-mega-menu {
+      position: absolute;
+      right: 15px;
+      left: auto;
+      top: 15px;
+      z-index: 100;
+      width: auto;
+      display: inline-block;
+      background-color: transparent!important;
+  }
+  .homepage-wrapper .navbar-toggler .toggle-icon {
+    background-color: #ffffff;
+  }
+  .navbar-expand-xl .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .hs-has-sub-menu > .nav-link:before {
+    top: 9px;
+  }
+  .navbar-nav .nav-item {
+      text-align: center;
+  }
+  .navbar-nav .nav-item {
+      text-align: center;
+  }
+  .navbar-expand-xl .navbar-nav .nav-link {
+      display: inline-block;
+  }
+  .nav-item .nav-link:after{
+    content: none;
+  }
+  .nav-item > .nav-link {
+      font-size: 16px;
+  }
+}
+@media (min-width: 992px) { 
+  .messagedora{
+      margin-right: -140px;
+  }
+  .explore-section h2 {
+      font-size: 64px;
+  }
+}
+@media (max-width: 991px) { 
+  .messagedora {
+    max-width: 80%;
+    margin: 0 auto -10%;
+  }
+  .footer-globe h4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-globe-img {
+    max-width: 320px;
+  }
+  .explore-section h2 {
+      font-size: 44px;
+  }
+}
+@media (max-width:767px) {
+  .container_foto h2 {
+      font-size: 20px;
+  }
+  .info-section .card-title {
+      font-size: 20px;
+  }
+  .info-section h4 {
+      font-size: 18px;
+  }
+  .homepage-wrapper .social-icons > .pl-5 {
+    padding-left: 0!important;
+  }
+  .homepage-wrapper .js-mega-menu {
+    top: 10px;
+  }
+  .homepage-wrapper .social-icons i {
+     padding: 0 10px;
+  }
+  .homepage-wrapper .iit-logo {
+      max-width: 280px;
+  }
 }
